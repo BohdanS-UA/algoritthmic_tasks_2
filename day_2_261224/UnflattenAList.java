@@ -25,10 +25,6 @@ public class Kata {
                 i += flatArray[i] - 1;
             }
         }
-        Object[] objects = new Object[objectList.size()];
-        for (int i = 0; i < objectList.size(); i++) {
-            objects[i] = objectList.get(i);
-        }
-        return objects;
+        return objectList.toArray();
   }
 }
