@@ -6,7 +6,7 @@ class DivSeven {
         int steps = 0;
         while (stringM.length() > 2) {
             long decimal = m / 10;
-            long leftover = m - decimal * 10;
+            long leftover = m % 10;
             m = decimal - 2 * leftover;
             stringM = String.valueOf(m);
             steps++;
