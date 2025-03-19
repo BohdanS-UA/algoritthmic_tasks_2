@@ -7,6 +7,10 @@ import java.util.Map;
 
 public class Solution {
     public static String[] sortEmotions(boolean order, String[] emotions) {
+        if (emotions == null || emotions.length == 0) {
+			return emotions;
+        }
+        
         Map<String, Integer> emotionMap = new HashMap<String, Integer>();
         emotionMap.put(":D", 1);
         emotionMap.put(":)", 2);
