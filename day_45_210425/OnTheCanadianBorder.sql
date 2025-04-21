@@ -2,7 +2,4 @@
 
 SELECT name, country
 FROM travelers
-WHERE 
-  country != 'USA' AND
-  country != 'Canada' AND
-  country != 'Mexico'
+WHERE country NOT IN ('Canada', 'Mexico', 'USA' )
