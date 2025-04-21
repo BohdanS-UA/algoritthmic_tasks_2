@@ -4,5 +4,5 @@ SELECT
   project,
   commits,
   contributors,
-  REGEXP_REPLACE(address, '\d', '!') AS address
+  REGEXP_REPLACE(address, '\d', '!', 'g') AS address
 FROM repositories
