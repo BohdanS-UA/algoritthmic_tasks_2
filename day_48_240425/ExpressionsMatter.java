@@ -10,10 +10,11 @@ public class Kata
     {
         List<Integer> list = new ArrayList<>(4);
         list.add(a * (b + c));
-        list.add(a * b * c);
-        list.add(a + b * c);
         list.add((a + b) * c);
+        list.add(a * b * c);
         list.add(a + b + c);
+        list.add(a + b * c);
+        list.add(a * b + c);
         return list.stream().max(Comparator.naturalOrder()).get();
     }
 }
